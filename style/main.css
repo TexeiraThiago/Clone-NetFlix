@@ -1,3 +1,38 @@
+/* declarando variáveis */
+:root{
+  --vermelho: #e50914;
+  --preta:#141414;
+}
 body{
-  background-color: blue;
+  /* utilizando variável */
+  background: var(--preta);
+  /* procura fonte original */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*flexbox: os itens dentro do container ficam lina */
+header .container {
+    display: flex;
+  /* opção padrão */
+  flex-direction: row;
+  align-items: center;
+  /* coloca um espaço entre os filhos */
+  justify-content: space-between;
+}
+
+header .logo{
+  margin-left: 10px;
+  color:#e50914;
+  font-family: 'Arial Black';
+  font-size: 40px;
+
+}
+/* removendo underline no link de navbar */
+header nav a{
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+header nav a:hover{
+  color:#fff
 }
